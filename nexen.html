@@ -12,239 +12,53 @@
 
 <body>
     <nav class="navbar">
-
         <div class="logo">Nexen</div>
-        <ul class=" nav_lists">
-            <li><a href="#">Products</a></li>
-            <li><a href="#">categories</a></li>
+        <ul class="nav_lists">
+            <li><a href="nexen.html">Products</a></li>
+            <li><a href="add-product.html">Sell</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Orders</a></li>
+            <li><a href="orders.html">Orders</a></li>
         </ul>
-
         <div class="nav-cta">
             <div class="sr_bar">
-                <input type="text" placeholder="Search" class="nav-search_input">
+                <input type="text" id="searchInput" placeholder="Search" class="nav-search_input">
             </div>
-            <a href="#" class="btn-wishlist ">Checkout</a>
+            <a href="#" class="btn-wishlist">Checkout</a>
         </div>
     </nav>
-  
+
     <main class="product_page">
         <section class="products_header">
             <div class="container">
                 <h1 class="title_head">Made for a second life</h1>
-
-               <div class="filter_wrapper">
-                <div class="categories_tab">
-                    <button class="tab_active" data-category="all">All</button>
-                    <button class="tab" data-category="laptops">Laptops</button>
-                    <button class="tab" data-category="Smartphone">Smartphone</button>
-                    <button class="tab" data-category="Entertainment">Entertainment</button>
-                    <button class="tab" data-category="wearables">Watches</button>
-
+                <div class="filter_wrapper">
+                    <div class="categories_tab">
+                        <button class="tab_active" data-category="all">All</button>
+                        <button class="tab" data-category="laptops">Laptops</button>
+                        <button class="tab" data-category="smartphones">Smartphones</button>
+                        <button class="tab" data-category="entertainment">Entertainment</button>
+                        <button class="tab" data-category="wearables">Watches</button>
+                    </div>
                 </div>
-               </div>
             </div>
         </section>
 
         <section class="product-section">
-        
-                <div class="products-box" id="product_container">
-
-                    <article class="product_information">
-                        
-                           <div class="category-row" id="laptops">
-                <div class="category-row__header">
-                    <h2 class="category-row__title">Laptops</h2>
-                    <button class="category-row__see-all">See all →</button>
-                </div>
-                <div class="category-row__track">
-
-                    <article class="product_information">
-                        <div class="product_image">
-                            <img src="https://pngimg.com/uploads/macbook/macbook_PNG8.png" alt="MacBook Air M4">
-                        </div>
-                        <div class="product_info">
-                            <h3 class="product_name">MacBook Air 13" – M4</h3>
-                            <p class="product_specs_">Apple M4 · 16GB RAM · 512GB SSD</p>
-                            <div class="product_prices_">
-                                <span class="product_rating">Good Condition</span>
-                                <span class="product-price">€879</span>
-                            </div>
-                            <button class="btn_atc">Add to Bag</button>
-                        </div>
-                    </article>
-
-                    <article class="product_information">
-                        <div class="product_image">
-                            <img src="https://pngimg.com/uploads/macbook/macbook_PNG8.png" alt="MacBook Air M3">
-                        </div>
-                        <div class="product_info">
-                            <h3 class="product_name">MacBook Air 13" – M3</h3>
-                            <p class="product_specs_">Apple M3 · 8GB RAM · 256GB SSD</p>
-                            <div class="product_prices_">
-                                <span class="product_rating">Like New</span>
-                                <span class="product-price">€699</span>
-                            </div>
-                            <button class="btn_atc">Add to Bag</button>
-                        </div>
-                    </article>
-
-                    <article class="product_information">
-                        <div class="product_image">
-                            <img src="https://pngimg.com/uploads/macbook/macbook_PNG8.png" alt="MacBook Pro M3">
-                        </div>
-                        <div class="product_info">
-                            <h3 class="product_name">MacBook Pro 14" – M3 Pro</h3>
-                            <p class="product_specs_">Apple M3 Pro · 18GB RAM · 512GB SSD</p>
-                            <div class="product_prices_">
-                                <span class="product_rating">Good Condition</span>
-                                <span class="product-price">€1,249</span>
-                            </div>
-                            <button class="btn_atc">Add to Bag</button>
-                        </div>
-                    </article>
-
-                    <article class="product_information">
-                        <div class="product_image">
-                            <img src="https://pngimg.com/uploads/macbook/macbook_PNG8.png" alt="Dell XPS 13">
-                        </div>
-                        <div class="product_info">
-                            <h3 class="product_name">Dell XPS 13 (2023)</h3>
-                            <p class="product_specs_">Intel i7 · 16GB RAM · 512GB SSD</p>
-                            <div class="product_prices_">
-                                <span class="product_rating">Good Condition</span>
-                                <span class="product-price">€749</span>
-                            </div>
-                            <button class="btn_atc">Add to Bag</button>
-                        </div>
-                    </article>
-
-                    <article class="product_information">
-                        <div class="product_image">
-                            <img src="https://pngimg.com/uploads/macbook/macbook_PNG8.png" alt="ThinkPad X1">
-                        </div>
-                        <div class="product_info">
-                            <h3 class="product_name">Lenovo ThinkPad X1 Carbon</h3>
-                            <p class="product_specs_">Intel i5 · 16GB RAM · 256GB SSD</p>
-                            <div class="product_prices_">
-                                <span class="product_rating">Fair Condition</span>
-                                <span class="product-price">€499</span>
-                            </div>
-                            <button class="btn_atc">Add to Bag</button>
-                        </div>
-                    </article>
-
+            <div class="container">
+                <div class="products-box" id="productContainer">
+                    <!-- Products loaded by nexen.js -->
                 </div>
             </div>
-
-            <!-- ── MOBILES ROW ── -->
-            <div class="category-row" id="mobiles">
-                <div class="category-row__header">
-                    <h2 class="category-row__title">Mobiles</h2>
-                    <button class="category-row__see-all">See all →</button>
-                </div>
-                <div class="category-row__track">
-
-                    <article class="product_information">
-                        <div class="product_image">
-                            <img src="https://pngimg.com/uploads/macbook/macbook_PNG8.png" alt="iPhone 15 Pro">
-                        </div>
-                        <div class="product_info">
-                            <h3 class="product_name">iPhone 15 Pro</h3>
-                            <p class="product_specs_">A17 Pro · 256GB · Natural Titanium</p>
-                            <div class="product_prices_">
-                                <span class="product_rating">Like New</span>
-                                <span class="product-price">€849</span>
-                            </div>
-                            <button class="btn_atc">Add to Bag</button>
-                        </div>
-                    </article>
-
-                    <article class="product_information">
-                        <div class="product_image">
-                            <img src="https://pngimg.com/uploads/macbook/macbook_PNG8.png" alt="iPhone 14">
-                        </div>
-                        <div class="product_info">
-                            <h3 class="product_name">iPhone 14</h3>
-                            <p class="product_specs_">A15 Bionic · 128GB · Midnight</p>
-                            <div class="product_prices_">
-                                <span class="product_rating">Good Condition</span>
-                                <span class="product-price">€549</span>
-                            </div>
-                            <button class="btn_atc">Add to Bag</button>
-                        </div>
-                    </article>
-
-                    <article class="product_information">
-                        <div class="product_image">
-                            <img src="https://pngimg.com/uploads/macbook/macbook_PNG8.png" alt="Samsung S24">
-                        </div>
-                        <div class="product_info">
-                            <h3 class="product_name">Samsung Galaxy S24</h3>
-                            <p class="product_specs_">Snapdragon 8 Gen 3 · 256GB</p>
-                            <div class="product_prices_">
-                                <span class="product_rating">Like New</span>
-                                <span class="product-price">€699</span>
-                            </div>
-                            <button class="btn_atc">Add to Bag</button>
-                        </div>
-                    </article>
-
-                    <article class="product_information">
-                        <div class="product_image">
-                            <img src="https://pngimg.com/uploads/macbook/macbook_PNG8.png" alt="Google Pixel 8">
-                        </div>
-                        <div class="product_info">
-                            <h3 class="product_name">Google Pixel 8</h3>
-                            <p class="product_specs_">Tensor G3 · 128GB · Obsidian</p>
-                            <div class="product_prices_">
-                                <span class="product_rating">Good Condition</span>
-                                <span class="product-price">€479</span>
-                            </div>
-                            <button class="btn_atc">Add to Bag</button>
-                        </div>
-                    </article>
-
-                    <article class="product_information">
-                        <div class="product_image">
-                            <img src="https://pngimg.com/uploads/macbook/macbook_PNG8.png" alt="OnePlus 12">
-                        </div>
-                        <div class="product_info">
-                            <h3 class="product_name">OnePlus 12</h3>
-                            <p class="product_specs_">Snapdragon 8 Gen 3 · 256GB</p>
-                            <div class="product_prices_">
-                                <span class="product_rating">Like New</span>
-                                <span class="product-price">€599</span>
-                            </div>
-                            <button class="btn_atc">Add to Bag</button>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-
-                                    <button class="btn_atc">Add to Bag</button>
-                                </div>
-                            </article>
-
-                        </div>
-
-                    </article>
-                </div>
-                <div class="pages_">
-                    <button class="btn-ghost active">1</button>
-                    <button class="btn-ghost">2</button>
-                    <button class="btn-ghost">Next &rarr;</button>
-                </div>
-            </section>
-
+        </section>
     </main>
+
     <footer class="footer">
         <div class="container">
             <p>Tested. Trusted. Yours.</p>
         </div>
     </footer>
+
+    <script src="nexen.js"></script>
 </body>
 
 </html>

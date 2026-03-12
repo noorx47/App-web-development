@@ -12,6 +12,10 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
+// Routes
+app.use('/api/products', require('./routes/products'));
+app.use('/api/orders', require('./routes/orders'));
+
 // Test route
 app.get('/', (req, res) => {
   res.json({ message: 'Nexen API is running' });

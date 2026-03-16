@@ -58,6 +58,26 @@
         </div>
     </footer>
 
+    <div class="modal_overlay" id="productModal">
+  <div class="modal_content">
+    <button class="modal_close" onclick="closeModal()">✕</button>
+    <div class="modal_body">
+      <div class="modal_image_wrap">
+        <img id="modal_image" src="" alt="Product Image">
+      </div>
+      <div class="modal_details">
+        <span class="modal_category" id="modal_category"></span>
+        <h2 class="modal_name" id="modal_name"></h2>
+        <p class="modal_description" id="modal_description"></p>
+        <div class="modal_meta">
+          <span class="product_rating" id="modal_condition"></span>
+          <span class="product-price" id="modal_price"></span>
+        </div>
+        <button class="btn_atc" id="modal_atc">Add to Bag</button>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="nexen.js"></script>
 </body>
 

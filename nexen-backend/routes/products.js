@@ -12,6 +12,19 @@ router.get('/', async (req, res) => {
   }
 });
 
+// GET search products by name - MUST be before /:id
+router.get('/search', async (req, res) => {
+  try {
+    var query = req.query.q;
+    var products = await Product.find({
+      name: { $regex: query, $options: 'i' }
+    });
+    res.json(products);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 // GET single product
 router.get('/:id', async (req, res) => {
   try {

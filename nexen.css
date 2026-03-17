@@ -359,3 +359,138 @@ a {
     display: flex;
     animation: fadeIn 0.3s ease;
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}   
+
+.modal_close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modal_close:hover {
+  background: #ddd;
+}
+
+.modal_body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+.modal_image_wrap img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.modal_category {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.modal_name {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.modal_description {
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.modal_meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.loading_text {
+  text-align: center;
+  padding: 60px;
+  color: #888;
+}
+
+.product_information {
+  cursor: pointer;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.product_information:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.product_image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.product_information:hover .product_image img {
+  transform: scale(1.05);
+}
+
+.btn_atc {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.btn_atc:hover {
+  background: #0077ff;
+  transform: translateY(-1px);
+}
+
+.btn_added {
+  background: #22c55e !important;
+}
+
+.tab, .tab_active {
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tab_active {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.tab:hover {
+  border-color: #000;
+}

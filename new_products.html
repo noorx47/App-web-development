@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Nexen</div>
+        <ul class="nav_lists">
+            <li><a href="nexen.html">Products</a></li>
+            <li><a href="add-product.html">Sell</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="orders.html">Orders</a></li>
+        </ul>
+        <div class="nav-cta">
+            <div class="sr_bar">
+                <input type="text" id="searchInput" placeholder="Search" class="nav-search_input">
+            </div>
+            <a href="#" class="btn-wishlist">Checkout</a>
+        </div>
+    </nav>
+    
+    <main class = " add_product_page">
+        <div class="form_container">
+            <h1 class="form_title">list of Products</h1>
+            <p class="form_subtitle">Products which are available</p>
+            <div id = "form_messages"></div>
+
+            <form id=" add_productform">
+                <div class="group_form">
+                    <label for="name">name of product</label>
+                    <input type="text" id="name" name="name" placeholder="e.g Macbook Pro 16 inch" required>
+                </div>
+
+                <div class="group_form">
+
+                    <label for="description">Description</label>
+                    <input type="text" name="description" id="description" placeholder="e.g. iPhone 17pro 512GB" required>
+                </div>
+
+                <div class="group_form">
+                    <label for="price">price</label>
+                    <input type="number" id="price" placeholder="e.g €1199" required>
+
+                </div>
+
+                <div class="group_form">
+                    <label for="catergory">category</label>
+                   <select name="##" id="catergory" required>
+                    <option value="">Select a category</option>
+                    <option value="laptops">Laptops</option>
+                    <option value="phones">Phones</option>
+                    <option value="tablets">Tablets</option>
+                    <option value="watches">Watches</option>
+
+                   </select>
+                </div>
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,4 +1,4 @@
-var API_URL = 'http://localhost:3000/API';
+var API_URL = 'http://localhost:3000/api';
 var form = document.getElementById('add_productfor');
 
 form.addEventListener('submit', async (e) => {
@@ -10,6 +10,7 @@ form.addEventListener('submit', async (e) => {
   var imageUrl = document.getElementById('imageUrl').value;
   var category = document.getElementById('category').value;
   var stock = document.getElementById('stock').value;
+  var condition = document.getElementById('condition').value;
 
   var productData = {
     name: name,
@@ -22,7 +23,7 @@ form.addEventListener('submit', async (e) => {
   };
 
   try {
-    var response = await fetch(`${API_URL}/products`, {
+    var response = await fetch(API_URL + '/products', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(productData)

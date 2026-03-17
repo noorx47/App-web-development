@@ -494,3 +494,14 @@ a {
 .tab:hover {
   border-color: #000;
 }
+
+.add_product_page {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form_container {
+  width: 100%;
+  max-width: 600px;
+}

@@ -54,12 +54,41 @@
                     <option value="phones">Phones</option>
                     <option value="tablets">Tablets</option>
                     <option value="watches">Watches</option>
-
                    </select>
                 </div>
+
+                <div class="group_form">
+                    <label for="condition">Condition</label>
+                    <select name="condition" id="condition" required>
+                        <option value="">Select a condition</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good/option>
+                        <option value="Fair">Fair</option>
+                    </select>
+                </div>
+
+                <div class="group_form">
+                    <label for="stock">Stock</label>
+                    <input type="number" id="stock" name="stock" placeholder="e.g. 1" required>
+                </div>
+                
+                <div class="group_form">
+                    <label for="imgurl">Image URL</label>
+                    <input type="text" id="imgurl" placeholder="e.g. https://example.com/image.jpg">
+                </div>
+
+                <button type="submit" class="btn_submit">Add to cart</button>
             </form>
         </div>
 
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Tested Trusted Yours</p>
+        </div>
+    </footer>
+
+    <script src="add-products.js"></script>
 </body>
 </html>

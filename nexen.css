@@ -576,3 +576,58 @@ form_group label {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
+.orders_page {
+    padding: 60px 20px;
+}
+
+.order_card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.order_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.order_id {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.order_date {
+    color: #888;
+    font-size: 14px;
+}
+
+.order_status {
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 13px;
+    background: #f0fdf4;
+    color: #16a34a;
+    text-transform: capitalize;
+}
+
+.order_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.order_total {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+}

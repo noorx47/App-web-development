@@ -1,5 +1,5 @@
 var API_URL = 'http://localhost:3000/API';
-var form = document.getElementById('add-product-form');
+var form = document.getElementById('add_productfor');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();

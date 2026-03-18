@@ -631,3 +631,43 @@ form_group label {
     font-size: 16px;
     text-align: right;
 }
+
+.checkout_page {
+    padding: 60px 20px;
+}
+
+.checkout_layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.cart_summary, .payment_section {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.cart_summary h2, .payment_section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cart_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+.cart_total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+}

@@ -106,16 +106,18 @@ document.getElementById('productModal').addEventListener('click', function(e) {
 });
 
 function addToCart(id, name, price, button) {
-  var item = { id: id, name: name, price: price };
-  cart.push(item);
+    var cart = JSON.parse(localStorage.getItem('nexen_cart')) || [];
+    var item = { id: id, name: name, price: price };
+    cart.push(item);
+    localStorage.setItem('nexen_cart', JSON.stringify(cart));
 
-  button.textContent = '✓ Added!';
-  button.classList.add('btn_added');
+    button.textContent = '✓ Added!';
+    button.classList.add('btn_added');
 
-  setTimeout(function() {
-    button.textContent = 'Add to Bag';
-    button.classList.remove('btn_added');
-  }, 1500);
+    setTimeout(function() {
+        button.textContent = 'Add to Bag';
+        button.classList.remove('btn_added');
+    }, 1500);
 }
 
 var tabs = document.querySelectorAll('.tab, .tab_active');

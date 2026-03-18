@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nexen.css">
+    <title>Checkout - Nexen</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=AUUgQ7u97JLRukAp7emCnJYUAdZmCPI8mClvRV56ldyWRhJHAqcCi2rmtacuwAh20IY26zZCRnsKEi0y&currency=EUR"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Nexen</div>
+        <ul class="nav_lists">
+            <li><a href="nexen.html">Products</a></li>
+            <li><a href="add-products.html">Sell</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="orders.html">Orders</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="nexen.html" class="btn-wishlist">Back to Shop</a>
+        </div>
+    </nav>
+
+    <main class="checkout_page">
+        <div class="container">
+            <h1 class="form_title">Checkout</h1>
+            <p class="form_subtitle">Review your bag and complete your purchase</p>
+
+            <div class="checkout_layout">
+                <div class="cart_summary">
+                    <h2>Your Bag</h2>
+                    <div id="cartItems">
+                        <p class="loading_text">No items in bag.</p>
+                    </div>
+                    <div class="cart_total">
+                        <span>Total</span>
+                        <span id="cartTotal">€0</span>
+                    </div>
+                </div>
+
+                <div class="payment_section">
+                    <h2>Payment</h2>
+                    <div id="paypal-button-container"></div>
+                    <div id="payment_message"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Tested. Trusted. Yours.</p>
+        </div>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+
+</html>

@@ -41,7 +41,7 @@ async function loadProducts(category, search) {
       var product = filtered[i];
       html += '<article class="product_information" onclick="openModal(\'' + product._id + '\')">';
       html += '  <div class="product_image">';
-      html += '    <img src="' + product.imageUrl + '" alt="' + product.name + '">';
+      html += '    <img src="' + product.imageUrl + '" alt="' + product.name + '" onerror="this.onerror=null; this.src=\'https://placehold.co/400x300/f5f4f2/888?text=' + encodeURIComponent(product.name) + '\'">';
       html += '  </div>';
       html += '  <div class="product_info">';
       html += '    <h3 class="product_name">' + product.name + '</h3>';

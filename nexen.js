@@ -118,6 +118,8 @@ function addToCart(id, name, price, button) {
         button.textContent = 'Add to Bag';
         button.classList.remove('btn_added');
     }, 1500);
+
+    updateCartCount();
 }
 
 var tabs = document.querySelectorAll('.tab, .tab_active');
@@ -136,5 +138,12 @@ var searchBox = document.getElementById('searchInput');
 searchBox.addEventListener('input', function() {
   loadProducts('all', this.value);
 });
+
+function updateCartCount() {
+    var cart = JSON.parse(localStorage.getItem('nexen_cart')) || [];
+    document.getElementById('cartCount').textContent = cart.length;
+}
+
+updateCartCount();
 
 loadProducts();

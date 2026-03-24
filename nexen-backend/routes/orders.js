@@ -34,7 +34,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// PUT update order status (e.g. after PayPal payment)
+// PUT update order status
 router.put('/:id', async (req, res) => {
   try {
     const order = await Order.findByIdAndUpdate(req.params.id, req.body, { new: true });

@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// GET search products by name - MUST be before /:id
+// GET search products by name
 router.get('/search', async (req, res) => {
   try {
     var query = req.query.q;
